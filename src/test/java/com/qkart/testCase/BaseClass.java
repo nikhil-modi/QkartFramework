@@ -2,15 +2,19 @@ package com.qkart.testCase;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -38,6 +42,10 @@ public class BaseClass {
 		System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
 		driver = new ChromeDriver();
 		}
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().window().maximize();
+		
 	}
 	
 	@AfterClass
@@ -52,5 +60,10 @@ public class BaseClass {
 		FileUtils.copyFile(source, target);
 		System.out.println("screenshot taken");
 		
+	}
+	
+	public void scrollMethod(WebElement ele) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", ele);
 	}
 }

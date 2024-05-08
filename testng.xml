@@ -10,8 +10,9 @@
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qkart.testCase.TestCase01"/> 
-     <!--  <class name="com.qkart.testCase.Login_DDT_002"/>    -->
+    <!--  <class name="com.qkart.testCase.TestCase01"/>   -->
+      <class name="com.qkart.testCase.Login_DDT_002"/>     
+    <!--   <class name="com.qkart.testCase.HomePage_DDT_003"/>  -->
     </classes>
   </test> <!-- Test -->
   

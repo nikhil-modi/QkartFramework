@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-01T16:20:00 IST" name="framework.Qkart" finished-at="2024-05-01T16:20:06 IST" duration-ms="6474">
+  <suite started-at="2024-05-05T21:56:36 IST" name="framework.Qkart" finished-at="2024-05-05T21:56:45 IST" duration-ms="9124">
     <groups>
     </groups>
-    <test started-at="2024-05-01T16:20:00 IST" name="Test" finished-at="2024-05-01T16:20:06 IST" duration-ms="6474">
-      <class name="com.qkart.testCase.TestCase01">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qkart.testCase.TestCase01@4466af20]" started-at="2024-05-01T16:20:00 IST" name="setup" finished-at="2024-05-01T16:20:04 IST" duration-ms="3793" status="PASS">
+    <test started-at="2024-05-05T21:56:36 IST" name="Test" finished-at="2024-05-05T21:56:45 IST" duration-ms="9124">
+      <class name="com.qkart.testCase.Login_DDT_002">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qkart.testCase.Login_DDT_002@6ae5aa72]" started-at="2024-05-05T21:56:36 IST" name="setup" finished-at="2024-05-05T21:56:38 IST" duration-ms="1699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.qkart.testCase.TestCase01@4466af20]" started-at="2024-05-01T16:20:04 IST" name="loginTest" finished-at="2024-05-01T16:20:06 IST" duration-ms="1898" status="PASS">
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.qkart.testCase.Login_DDT_002@6ae5aa72]" started-at="2024-05-05T21:56:39 IST" name="loginDDT" data-provider="LoginData" finished-at="2024-05-05T21:56:42 IST" duration-ms="2829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12test21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12test21]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qkart.testCase.TestCase01@4466af20]" started-at="2024-05-01T16:20:06 IST" name="tearDown" finished-at="2024-05-01T16:20:06 IST" duration-ms="173" status="PASS">
+        </test-method> <!-- loginDDT -->
+        <test-method signature="addingItemsToCart()[pri:1, instance:com.qkart.testCase.Login_DDT_002@6ae5aa72]" started-at="2024-05-05T21:56:42 IST" name="addingItemsToCart" finished-at="2024-05-05T21:56:45 IST" duration-ms="3034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingItemsToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qkart.testCase.Login_DDT_002@6ae5aa72]" started-at="2024-05-05T21:56:45 IST" name="tearDown" finished-at="2024-05-05T21:56:45 IST" duration-ms="229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qkart.testCase.TestCase01 -->
+      </class> <!-- com.qkart.testCase.Login_DDT_002 -->
     </test> <!-- Test -->
   </suite> <!-- framework.Qkart -->
 </testng-results>

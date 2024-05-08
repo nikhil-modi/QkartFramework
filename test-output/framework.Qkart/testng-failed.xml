@@ -9,8 +9,8 @@
     <classes>
       <class name="com.qkart.testCase.Login_DDT_002">
         <methods>
+          <include name="addingItemsToCart"/>
           <include name="tearDown"/>
-          <include name="loginDDT" invocation-numbers="1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qkart.testCase.Login_DDT_002 -->

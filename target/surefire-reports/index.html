@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-framework_Qkart">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-framework_Qkart" title="com.qkart.testCase.TestCase01" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-framework_Qkart" title="com.qkart.testCase.Login_DDT_002" class="method navigator-link" hash-for-method="addingItemsToCart">addingItemsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-framework_Qkart" title="com.qkart.testCase.Login_DDT_002" class="method navigator-link" hash-for-method="loginDDT(12test21, 12test21)">loginDDT(12test21, 12test21)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-framework_Qkart -->
@@ -121,14 +126,22 @@
           <div class="suite-framework_Qkart-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.qkart.testCase.TestCase01</span>
+              <span class="class-name">com.qkart.testCase.Login_DDT_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="addingItemsToCart">
+                  </a> <!-- addingItemsToCart -->
+                  <span class="method-name">addingItemsToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginDDT(12test21, 12test21)">
+                  </a> <!-- loginDDT(12test21, 12test21) -->
+                  <span class="method-name">loginDDT</span>
+                  <span class="parameters">(12test21,12test21)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +162,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qkart.testCase.TestCase01&quot;/&gt;
+      &lt;class name=&quot;com.qkart.testCase.Login_DDT_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- framework.Qkart --&gt;
@@ -189,16 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.qkart.testCase.TestCase01')
-data.setCell(0, 3, 1898);
+data.setCell(0, 1, 'addingItemsToCart')
+data.setCell(0, 2, 'com.qkart.testCase.Login_DDT_002')
+data.setCell(0, 3, 3034);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginDDT')
+data.setCell(1, 2, 'com.qkart.testCase.Login_DDT_002')
+data.setCell(1, 3, 2829);
 window.suiteTableData['framework_Qkart']= { tableData: data, tableDiv: 'times-div-framework_Qkart'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-framework_Qkart">
               </div> <!-- times-div-framework_Qkart -->
             </div> <!-- times-div -->
@@ -224,18 +241,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qkart.testCase.TestCase01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qkart.testCase.Login_DDT_002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">3805 ms</span>
+                <span class="method-name">loginDDT(12test21, 12test21)</span>
+                <span class="method-start">2627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addingItemsToCart</span>
+                <span class="method-start">5472 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5741 ms</span>
+                <span class="method-start">8509 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
